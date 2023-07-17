@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phase 1 Project</title>
 
     <!--css reset: sindresorhus/modern-normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" 
-    referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="styles.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- custom javaScript ..connected with javascript-->
     <script defer src="main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!--header begins-->
     <header id="top">
-        <h1>Project NAME</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#Section1">Section 1</a>
-                </li>
-                <li>
-                    <a href="#Section2">Section 2</a>
-                </li>
-                <li>
-                    <a href="#Section3">Section 3</a>
-                </li>
-            </ul>
-        </nav>
+      <h1>Project NAME</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#Section1">Section 1</a>
+          </li>
+          <li>
+            <a href="#Section2">Section 2</a>
+          </li>
+          <li>
+            <a href="#Section3">Section 3</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!--header ends-->
 
     <!--main begins-->
     <main>
-<!-- search filter -->
-        <section class="search-form">
-            <h2>FORM SECTION</h2>
-            <form action="GET" id="meal-form">
-                <label for="search-terms">Search term:</label>
-                <input type="text" name="search-terms" id="search-terms"
-                placeholder="input search term" required />
+      <!-- search filter -->
+      <section class="search-form">
+        <h2>FORM SECTION</h2>
+        <form action="GET" id="meal-form">
+          <label for="search-terms">Search term:</label>
+          <input
+            type="text"
+            name="search-terms"
+            id="search-terms"
+            placeholder="input search term"
+            required
+          />
 
-                <br />
-<!-- drop down search -->
-                <label for="Category-filter">Category-filter:</label>
-                <select name="category-filter" id="Category-filter" required>
-                    <option value="option 1">option 1</option>
-                    <option value="option 2">option 2</option>
-                    <option value="option 3">option 3</option>
-                </select>
+          <br />
+          <!-- drop down search -->
+          <label for="Category-filter">Category-filter:</label>
+          <select name="category-filter" id="Category-filter" required>
+            <option value="option 1">option 1</option>
+            <option value="option 2">option 2</option>
+            <option value="option 3">option 3</option>
+          </select>
 
-                <br />
-                
+          <br />
 
-<!-- Search button -->
-                <input type="submit" value="Search">
-            </form>
-        </section>
+          <!-- Search button -->
+          <input type="submit" value="Search" />
+        </form>
+      </section>
 
-
-
-        <section id="section1">
-            <h2>Section 1</h2>
-            <img src="#" alt="Image name">
-            <p>
-                Description Paragraph on this part of section  1
-                this that this that this that this that this that
-            </p>
-        </section>
-        <section id="section2">
-            <h2>Section 2</h2>
-            <img src="#" alt="Image name">
-            <p>
-                Description Paragraph on this part of section  2
-                this that this that this that this that this that
-            </p>
-        </section>
-        <section id="section3">
-            <h2>Section 3</h2>
-            <img src="#" alt="Image name">
-            <p>
-                Description Paragraph on this part of section  3
-                this that this that this that this that this that
-            </p>
-        </section>
-        <h2>Search Input Section</h2>
+      <section id="section1">
+        <h2>Section 1</h2>
+        <img src="#" alt="Image name" />
+        <p>
+          Description Paragraph on this part of section 1 this that this that
+          this that this that this that
+        </p>
+      </section>
+      <section id="section2">
+        <h2>Section 2</h2>
+        <img src="#" alt="Image name" />
+        <p>
+          Description Paragraph on this part of section 2 this that this that
+          this that this that this that
+        </p>
+      </section>
+      <section id="section3">
+        <h2>Section 3</h2>
+        <img src="#" alt="Image name" />
+        <p>
+          Description Paragraph on this part of section 3 this that this that
+          this that this that this that
+        </p>
+      </section>
+      <h2>Search Input Section</h2>
     </main>
     <!--main ends-->
 
     <!--footer begins-->
     <footer>
-        <p>Copyright Edgar Avila 2023</p>
-        <a href="#top">Back to top</a>
+      <p>Copyright Edgar Avila 2023</p>
+      <a href="#top">Back to top</a>
     </footer>
     <!--footer ends-->
-</body>
+  </body>
 </html>
