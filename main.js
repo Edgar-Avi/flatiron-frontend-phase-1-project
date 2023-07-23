@@ -15,7 +15,7 @@ const getMealCategories = async () => {
         return categories;
     } catch (error) {
         console.log(error)
-        alert('Something went wrong,try again')
+        alert('Something went wrong,try again');
     }
 };
 
@@ -23,28 +23,46 @@ const getMealCategories = async () => {
 const renderMealCategories = (mealCategoriesArray) => {
     console.log('renderMealCategories');
     console.table(mealCategoriesArray);
-
+}
 // find and select in a UL our meal categories ID dom element to append my data into
+const mealCategoriesList = document.body.querySelector('#meal-categories-list')
 
 // for each element in our meal categories array
-    // create a wrapping element maybe <article> class of card
-    // appendChild the article.card to selected DOM element
+// mealCategoriesArray.forEach(mealCategory) => {
+
+    //create a wrapping element <li> class of card
+    const mealCategoryListItem = document.createElement('li');
+    mealCategoryListItem.className = 'meal-category-card';
+    // appendChild the li.card to selected DOM element
+    mealCategoriesList.appendChild(mealCategoryListItem);
+
     // display the category name, image, and description
-        // image
-            // create image element
-            // set img src to category thumbnail url
-            // give class of categoty-thumbnail url
-            // give it a mobile friendly max width of 300px
-            // appendChild the img to our card
-        // name
-            // create an h4 element
-            // set h4 element textContent to be meal category name
-            // appendChild the h4 to our card
-        // description
-            // create an <p> element
-            // set p element textContent to be meal category description
-            // appendChild the p to our card    
-};
+    // image
+    // create image element 
+    const mealCategoryImg = document.createElement('img');
+    // set img src to category thumbnail url
+    mealCategoryImg.src = mealCategory?.strCategoryThumb   //mealCategory ??<--
+    // give it a mobile friendly max width of 300px
+    mealCategoryImg.width = 300
+    // appendChild the img to our card
+    mealCategoryListItem.appendChild(mealCategoryImg);
+
+    // name
+    // create an h4 element
+    const mealCategoryName = document.createElement('h4');
+    // set h4 element textContent to be meal category name
+    mealCategoryName.textContent = mealCategoryImg.strCategory;  //mealCategory? <--
+    // appendChild the h4 to our card
+    mealCategoryListItem.appendChild(mealCategoryName);
+
+    // description
+    // create an p element
+    const mealCategoryDescription = document.createElement('p');
+    // set p element textContent to be meal category description
+    mealCategoryDescription.textContent = mealCategory?.strCategoryDescription;
+    // appendChild the p to our card
+    mealCategoryListItem.appendChild(mealCategoryDescription);
+    // }; 
 
 //function to call when form input is given focus
 const handleFormInputFocus = async () => {
