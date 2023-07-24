@@ -1,6 +1,6 @@
 console.log('main.js connected')
 
-//get search field input
+//get search field input 
 const searchTermsInput = document.body.querySelector('#search-terms');
 
 //fetch meal categories data from TheMealDB API
@@ -27,8 +27,8 @@ const renderMealCategories = (mealCategoriesArray) => {
 // find and select in a UL our meal categories ID dom element to append my data into
 const mealCategoriesList = document.body.querySelector('#meal-categories-list')
 
-// for each element in our meal categories array
-// mealCategoriesArray.forEach(mealCategory) => {
+// // for each element in our meal categories array
+// // mealCategoriesArray.forEach(mealCategoryImg);
 
     //create a wrapping element <li> class of card
     const mealCategoryListItem = document.createElement('li');
@@ -41,7 +41,7 @@ const mealCategoriesList = document.body.querySelector('#meal-categories-list')
     // create image element 
     const mealCategoryImg = document.createElement('img');
     // set img src to category thumbnail url
-    mealCategoryImg.src = mealCategory?.strCategoryThumb   //mealCategory ??<--
+    // mealCategoryImg.src = mealCategoryImg.strCategoryThumb   //mealCategory ??<--
     // give it a mobile friendly max width of 300px
     mealCategoryImg.width = 300
     // appendChild the img to our card
@@ -59,7 +59,7 @@ const mealCategoriesList = document.body.querySelector('#meal-categories-list')
     // create an p element
     const mealCategoryDescription = document.createElement('p');
     // set p element textContent to be meal category description
-    mealCategoryDescription.textContent = mealCategory?.strCategoryDescription;
+    mealCategoryDescription.textContent = mealCategoryImg?.strCategoryDescription;
     // appendChild the p to our card
     mealCategoryListItem.appendChild(mealCategoryDescription);
     // }; 
