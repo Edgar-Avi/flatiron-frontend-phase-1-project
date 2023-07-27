@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;1,300&display=swap');
 /* imports from google.fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,10 +11,10 @@
 body {
     line-height: 0.9;
 }
-
+/* App title */
 h1 {
-    font-size: 66px;
-    font-weight: bold;
+    font-size: 86px;
+    font-weight: lighter;
     text-align: center;
     margin: 40px 0 50px 0;
 }
@@ -37,9 +38,9 @@ form {
 }
 /* search button mods*/
 #search-button {
-    width: 170px;
-    max-width: 150px;
-    background-color: rgb(213, 235, 236);
+    width: 120px;
+    max-width: 130px;
+    background-color:  rgb(201, 242, 220);
     padding: 15px 35px;
     border: none;
     box-shadow: 0 0 15px rgb(0, 0, 0, 0.4);
@@ -86,4 +87,39 @@ form {
     display: block;
     padding: 10px;
     text-transform: capitalize;
+}
+/* show more button mods */
+#show-more-button {
+    width: 150px;
+    max-width: 150px;
+    background-color: rgb(201, 242, 220);
+    padding: 5px 25px;
+    border: none;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.4);
+    border-radius: 78px;
+    font-size: 18px;
+    color: rgb(40, 134, 134);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    display: none;
+}
+/* adds spacing. media query */
+@media screen and (max-width: 768px) {
+    .search-results {
+         padding: 20px;
+    }
+    .search-result {
+        width:45%;
+    }
+    
+}
+/* media quarytakes smaller screens */
+@media screen and (max-width: 480px) {
+    .search-result {
+        width:100%;
+    }
+    
 }
